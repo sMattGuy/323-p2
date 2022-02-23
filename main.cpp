@@ -106,6 +106,7 @@ class HTable{
 			listNode* temp = spot->next;
 			spot->next = temp->next;
 			temp->next = nullptr;
+			delete temp;
 		}
 		else{
 			outFile1<<"Warning! The data is NOT in the database! Cannot delete!"<<std::endl;
